@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Zilla+Slab:wght@600;700&display=swap');
+
+:root {
+  --bar: #a66;
+  --bar-dark: #7a3b3b;
+  --ink: #2b2b2b;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR styling/typesetting CSS code BELOW HERE */
+
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Lora", Georgia, serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  letter-spacing: 0.03rem;
+  word-spacing: 0.15rem;
+  color: var(--ink);
+}
+
+h1, h2 {
+  font-family: "Zilla Slab", Georgia, serif;
+  letter-spacing: 0.2rem;
+}
+
+h1 {
+  font-size: 4.2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+h2 {
+  font-size: 2.6rem;
+  margin: 0 0 1.4rem;
+}
+
+p {
+  margin: 0 0 1.7rem;
+}
+
+section h2 + p {
+  text-indent: 1.25rem;
+}
+
+/* links */
+
+a {
+  color: var(--bar);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--bar-dark);
+}
+
+a:hover,
+a:focus {
+  color: var(--bar-dark);
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:active {
+  color: #fff;
+  background-color: var(--bar);
+  text-decoration: none;
+}
+
+a[href^="http"]::after {
+  content: "";
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 0.4rem;
+  background-image: url("external-link-52.png");
+  background-size: 100% 100%;
+}
+
+/* lists */
+
+ul, ol {
+  margin: 0 0 1.7rem;
+  padding-left: 2.4rem;
+}
+
+li {
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+section ul,
+aside ul {
+  list-style: square;
+}
+
+section ol {
+  list-style: lower-alpha;
+}
+
+/* navigation menu */
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 1.2rem;
+}
+
+nav a {
+  display: block;
+  padding: 1.6rem 1rem;
+  border: 2px solid var(--bar);
+  font-family: "Zilla Slab", Georgia, serif;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: var(--bar);
+  color: #fff;
+}
+
+/* footer */
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
